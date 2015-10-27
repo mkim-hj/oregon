@@ -6,7 +6,13 @@
 //  Copyright © 2015 Maruchi Kim. All rights reserved.
 //
 
+
+
 #import "AppDelegate.h"
+
+@import AFNetworking;
+@import AUTAPIClient;
+
 
 @interface AppDelegate ()
 

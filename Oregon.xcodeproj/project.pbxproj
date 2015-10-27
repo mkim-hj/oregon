@@ -7,16 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E288BFE1BDED86400C6FC6F /* Automatic_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */; };
+		6E2DAE5F1BDAF5E3000A7839 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */; };
+		6E2DAE601BDAF5E3000A7839 /* AUTAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE571BDAF5E3000A7839 /* AUTAPIClient.framework */; };
+		6E2DAE621BDAF5E3000A7839 /* AUTLogKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE591BDAF5E3000A7839 /* AUTLogKit.framework */; };
+		6E2DAE631BDAF5E3000A7839 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE5A1BDAF5E3000A7839 /* CocoaLumberjack.framework */; };
+		6E2DAE641BDAF5E3000A7839 /* Godzippa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE5B1BDAF5E3000A7839 /* Godzippa.framework */; };
+		6E2DAE651BDAF5E3000A7839 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE5C1BDAF5E3000A7839 /* Mantle.framework */; };
+		6E2DAE661BDAF5E3000A7839 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE5D1BDAF5E3000A7839 /* ReactiveCocoa.framework */; };
+		6E2DAE671BDAF5E3000A7839 /* Valet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE5E1BDAF5E3000A7839 /* Valet.framework */; };
+		6E2DAE6B1BDEBD04000A7839 /* AUTBinaryTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE6A1BDEBD04000A7839 /* AUTBinaryTools.framework */; };
+		6E814CA61BDEBFA400E12B42 /* AutomaticAdapter.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6ED464341BD99A690075B042 /* AutomaticAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CA71BDEBFA400E12B42 /* AUTBinaryTools.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE6A1BDEBD04000A7839 /* AUTBinaryTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CA81BDEBFA400E12B42 /* AFNetworking.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CA91BDEBFA400E12B42 /* AUTAPIClient.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE571BDAF5E3000A7839 /* AUTAPIClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CAA1BDEBFA400E12B42 /* AUTLogKit.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE591BDAF5E3000A7839 /* AUTLogKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CAB1BDEBFA400E12B42 /* CocoaLumberjack.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE5A1BDAF5E3000A7839 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CAC1BDEBFA400E12B42 /* Godzippa.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE5B1BDAF5E3000A7839 /* Godzippa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CAD1BDEBFA400E12B42 /* Mantle.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE5C1BDAF5E3000A7839 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CAE1BDEBFA400E12B42 /* ReactiveCocoa.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE5D1BDAF5E3000A7839 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E814CAF1BDEBFA400E12B42 /* Valet.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE5E1BDAF5E3000A7839 /* Valet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6ED464141BD99A5D0075B042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED464131BD99A5D0075B042 /* main.m */; };
 		6ED464171BD99A5D0075B042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED464161BD99A5D0075B042 /* AppDelegate.m */; };
-		6ED4641A1BD99A5D0075B042 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED464191BD99A5D0075B042 /* ViewController.m */; };
 		6ED4641D1BD99A5D0075B042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED4641B1BD99A5D0075B042 /* Main.storyboard */; };
 		6ED464201BD99A5D0075B042 /* Oregon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4641E1BD99A5D0075B042 /* Oregon.xcdatamodeld */; };
 		6ED464221BD99A5D0075B042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED464211BD99A5D0075B042 /* Assets.xcassets */; };
 		6ED464251BD99A5D0075B042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED464231BD99A5D0075B042 /* LaunchScreen.storyboard */; };
+		6ED464371BD99A920075B042 /* AutomaticAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED464341BD99A690075B042 /* AutomaticAdapter.framework */; };
+		6ED4643B1BD99A920075B042 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED464381BD99A920075B042 /* ExternalAccessory.framework */; };
+		6ED4643C1BD99A920075B042 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED464391BD99A920075B042 /* Security.framework */; };
+		6ED4643D1BD99A920075B042 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED4643A1BD99A920075B042 /* UIKit.framework */; };
+		6EFED6481BDEC98300DD5E49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED464191BD99A5D0075B042 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6ED464311BD99A690075B042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED4642C1BD99A690075B042 /* AutomaticAdapterSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 572CF8B41A735F6500FC0CC5;
+			remoteInfo = AutomaticAdapterSDK;
+		};
+		6ED464331BD99A690075B042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED4642C1BD99A690075B042 /* AutomaticAdapterSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57A181E11AE2E46000D72D6F;
+			remoteInfo = AutomaticAdapter;
+		};
+		6ED464401BD99AB20075B042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED4642C1BD99A690075B042 /* AutomaticAdapterSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 57A181E01AE2E46000D72D6F;
+			remoteInfo = AutomaticAdapter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E814CA41BDEBF8A00E12B42 /* Embed Frameworks (10 items) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E814CA61BDEBFA400E12B42 /* AutomaticAdapter.framework in Embed Frameworks (10 items) */,
+				6E814CA71BDEBFA400E12B42 /* AUTBinaryTools.framework in Embed Frameworks (10 items) */,
+				6E814CA81BDEBFA400E12B42 /* AFNetworking.framework in Embed Frameworks (10 items) */,
+				6E814CA91BDEBFA400E12B42 /* AUTAPIClient.framework in Embed Frameworks (10 items) */,
+				6E814CAA1BDEBFA400E12B42 /* AUTLogKit.framework in Embed Frameworks (10 items) */,
+				6E814CAB1BDEBFA400E12B42 /* CocoaLumberjack.framework in Embed Frameworks (10 items) */,
+				6E814CAC1BDEBFA400E12B42 /* Godzippa.framework in Embed Frameworks (10 items) */,
+				6E814CAD1BDEBFA400E12B42 /* Mantle.framework in Embed Frameworks (10 items) */,
+				6E814CAE1BDEBFA400E12B42 /* ReactiveCocoa.framework in Embed Frameworks (10 items) */,
+				6E814CAF1BDEBFA400E12B42 /* Valet.framework in Embed Frameworks (10 items) */,
+			);
+			name = "Embed Frameworks (10 items)";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Automatic_Logo.png; sourceTree = "<group>"; };
+		6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		6E2DAE571BDAF5E3000A7839 /* AUTAPIClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTAPIClient.framework; path = Carthage/Build/iOS/AUTAPIClient.framework; sourceTree = "<group>"; };
+		6E2DAE591BDAF5E3000A7839 /* AUTLogKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTLogKit.framework; path = Carthage/Build/iOS/AUTLogKit.framework; sourceTree = "<group>"; };
+		6E2DAE5A1BDAF5E3000A7839 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		6E2DAE5B1BDAF5E3000A7839 /* Godzippa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Godzippa.framework; path = Carthage/Build/iOS/Godzippa.framework; sourceTree = "<group>"; };
+		6E2DAE5C1BDAF5E3000A7839 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
+		6E2DAE5D1BDAF5E3000A7839 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		6E2DAE5E1BDAF5E3000A7839 /* Valet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Valet.framework; path = Carthage/Build/iOS/Valet.framework; sourceTree = "<group>"; };
+		6E2DAE6A1BDEBD04000A7839 /* AUTBinaryTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTBinaryTools.framework; path = Carthage/Build/iOS/AUTBinaryTools.framework; sourceTree = "<group>"; };
 		6ED4640F1BD99A5D0075B042 /* Oregon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oregon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED464131BD99A5D0075B042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6ED464151BD99A5D0075B042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +109,10 @@
 		6ED464211BD99A5D0075B042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ED464241BD99A5D0075B042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ED464261BD99A5D0075B042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ED4642C1BD99A690075B042 /* AutomaticAdapterSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AutomaticAdapterSDK.xcodeproj; path = "../../firmware-sdk/iOS/AutomaticAdapterSDK.xcodeproj"; sourceTree = "<group>"; };
+		6ED464381BD99A920075B042 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		6ED464391BD99A920075B042 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6ED4643A1BD99A920075B042 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +120,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2DAE631BDAF5E3000A7839 /* CocoaLumberjack.framework in Frameworks */,
+				6ED4643B1BD99A920075B042 /* ExternalAccessory.framework in Frameworks */,
+				6E2DAE601BDAF5E3000A7839 /* AUTAPIClient.framework in Frameworks */,
+				6E2DAE6B1BDEBD04000A7839 /* AUTBinaryTools.framework in Frameworks */,
+				6E2DAE621BDAF5E3000A7839 /* AUTLogKit.framework in Frameworks */,
+				6E2DAE651BDAF5E3000A7839 /* Mantle.framework in Frameworks */,
+				6E2DAE5F1BDAF5E3000A7839 /* AFNetworking.framework in Frameworks */,
+				6E2DAE661BDAF5E3000A7839 /* ReactiveCocoa.framework in Frameworks */,
+				6ED4643D1BD99A920075B042 /* UIKit.framework in Frameworks */,
+				6ED4643C1BD99A920075B042 /* Security.framework in Frameworks */,
+				6E2DAE641BDAF5E3000A7839 /* Godzippa.framework in Frameworks */,
+				6ED464371BD99A920075B042 /* AutomaticAdapter.framework in Frameworks */,
+				6E2DAE671BDAF5E3000A7839 /* Valet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A4F43DE8323D674DA584A65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E2DAE6A1BDEBD04000A7839 /* AUTBinaryTools.framework */,
+				6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */,
+				6E2DAE571BDAF5E3000A7839 /* AUTAPIClient.framework */,
+				6E2DAE591BDAF5E3000A7839 /* AUTLogKit.framework */,
+				6E2DAE5A1BDAF5E3000A7839 /* CocoaLumberjack.framework */,
+				6E2DAE5B1BDAF5E3000A7839 /* Godzippa.framework */,
+				6E2DAE5C1BDAF5E3000A7839 /* Mantle.framework */,
+				6E2DAE5D1BDAF5E3000A7839 /* ReactiveCocoa.framework */,
+				6E2DAE5E1BDAF5E3000A7839 /* Valet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6ED464061BD99A5D0075B042 = {
 			isa = PBXGroup;
 			children = (
+				6ED464381BD99A920075B042 /* ExternalAccessory.framework */,
+				6ED464391BD99A920075B042 /* Security.framework */,
+				6ED4643A1BD99A920075B042 /* UIKit.framework */,
 				6ED464111BD99A5D0075B042 /* Oregon */,
 				6ED464101BD99A5D0075B042 /* Products */,
+				6ED4642C1BD99A690075B042 /* AutomaticAdapterSDK.xcodeproj */,
+				6A4F43DE8323D674DA584A65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +181,7 @@
 			children = (
 				6ED464151BD99A5D0075B042 /* AppDelegate.h */,
 				6ED464161BD99A5D0075B042 /* AppDelegate.m */,
+				6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */,
 				6ED464181BD99A5D0075B042 /* ViewController.h */,
 				6ED464191BD99A5D0075B042 /* ViewController.m */,
 				6ED4641B1BD99A5D0075B042 /* Main.storyboard */,
@@ -82,6 +202,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6ED4642D1BD99A690075B042 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ED464321BD99A690075B042 /* AutomaticAdapterSDK.app */,
+				6ED464341BD99A690075B042 /* AutomaticAdapter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,10 +221,12 @@
 				6ED4640B1BD99A5D0075B042 /* Sources */,
 				6ED4640C1BD99A5D0075B042 /* Frameworks */,
 				6ED4640D1BD99A5D0075B042 /* Resources */,
+				6E814CA41BDEBF8A00E12B42 /* Embed Frameworks (10 items) */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6ED464411BD99AB20075B042 /* PBXTargetDependency */,
 			);
 			name = Oregon;
 			productName = Oregon;
@@ -108,6 +239,9 @@
 		6ED464071BD99A5D0075B042 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					username,
+				);
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Maruchi Kim";
 				TargetAttributes = {
@@ -127,6 +261,12 @@
 			mainGroup = 6ED464061BD99A5D0075B042;
 			productRefGroup = 6ED464101BD99A5D0075B042 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6ED4642D1BD99A690075B042 /* Products */;
+					ProjectRef = 6ED4642C1BD99A690075B042 /* AutomaticAdapterSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6ED4640E1BD99A5D0075B042 /* Oregon */,
@@ -134,11 +274,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6ED464321BD99A690075B042 /* AutomaticAdapterSDK.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AutomaticAdapterSDK.app;
+			remoteRef = 6ED464311BD99A690075B042 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6ED464341BD99A690075B042 /* AutomaticAdapter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AutomaticAdapter.framework;
+			remoteRef = 6ED464331BD99A690075B042 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6ED4640D1BD99A5D0075B042 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E288BFE1BDED86400C6FC6F /* Automatic_Logo.png in Resources */,
 				6ED464251BD99A5D0075B042 /* LaunchScreen.storyboard in Resources */,
 				6ED464221BD99A5D0075B042 /* Assets.xcassets in Resources */,
 				6ED4641D1BD99A5D0075B042 /* Main.storyboard in Resources */,
@@ -152,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED4641A1BD99A5D0075B042 /* ViewController.m in Sources */,
+				6EFED6481BDEC98300DD5E49 /* ViewController.m in Sources */,
 				6ED464201BD99A5D0075B042 /* Oregon.xcdatamodeld in Sources */,
 				6ED464171BD99A5D0075B042 /* AppDelegate.m in Sources */,
 				6ED464141BD99A5D0075B042 /* main.m in Sources */,
@@ -160,6 +318,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ED464411BD99AB20075B042 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AutomaticAdapter;
+			targetProxy = 6ED464401BD99AB20075B042 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6ED4641B1BD99A5D0075B042 /* Main.storyboard */ = {
@@ -265,8 +431,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Oregon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Automatic.Oregon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -276,8 +452,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Oregon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Automatic.Oregon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -302,6 +488,7 @@
 				6ED4642B1BD99A5D0075B042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
