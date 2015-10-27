@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6E288BFE1BDED86400C6FC6F /* Automatic_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */; };
+		6E288C001BE0018700C6FC6F /* AutomaticLogo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E288BFF1BE0018700C6FC6F /* AutomaticLogo-large.png */; };
+		6E288C021BE001F000C6FC6F /* AutomaticLogo-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E288C011BE001F000C6FC6F /* AutomaticLogo-medium.png */; };
 		6E2DAE5F1BDAF5E3000A7839 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */; };
 		6E2DAE601BDAF5E3000A7839 /* AUTAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE571BDAF5E3000A7839 /* AUTAPIClient.framework */; };
 		6E2DAE621BDAF5E3000A7839 /* AUTLogKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE591BDAF5E3000A7839 /* AUTLogKit.framework */; };
@@ -89,6 +91,8 @@
 
 /* Begin PBXFileReference section */
 		6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Automatic_Logo.png; sourceTree = "<group>"; };
+		6E288BFF1BE0018700C6FC6F /* AutomaticLogo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AutomaticLogo-large.png"; sourceTree = "<group>"; };
+		6E288C011BE001F000C6FC6F /* AutomaticLogo-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AutomaticLogo-medium.png"; sourceTree = "<group>"; };
 		6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		6E2DAE571BDAF5E3000A7839 /* AUTAPIClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTAPIClient.framework; path = Carthage/Build/iOS/AUTAPIClient.framework; sourceTree = "<group>"; };
 		6E2DAE591BDAF5E3000A7839 /* AUTLogKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTLogKit.framework; path = Carthage/Build/iOS/AUTLogKit.framework; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				6ED464151BD99A5D0075B042 /* AppDelegate.h */,
 				6ED464161BD99A5D0075B042 /* AppDelegate.m */,
 				6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */,
+				6E288C011BE001F000C6FC6F /* AutomaticLogo-medium.png */,
+				6E288BFF1BE0018700C6FC6F /* AutomaticLogo-large.png */,
 				6ED464181BD99A5D0075B042 /* ViewController.h */,
 				6ED464191BD99A5D0075B042 /* ViewController.m */,
 				6ED4641B1BD99A5D0075B042 /* Main.storyboard */,
@@ -298,8 +304,10 @@
 			files = (
 				6E288BFE1BDED86400C6FC6F /* Automatic_Logo.png in Resources */,
 				6ED464251BD99A5D0075B042 /* LaunchScreen.storyboard in Resources */,
+				6E288C001BE0018700C6FC6F /* AutomaticLogo-large.png in Resources */,
 				6ED464221BD99A5D0075B042 /* Assets.xcassets in Resources */,
 				6ED4641D1BD99A5D0075B042 /* Main.storyboard in Resources */,
+				6E288C021BE001F000C6FC6F /* AutomaticLogo-medium.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

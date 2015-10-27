@@ -1,20 +1,28 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2AA760079D6F82F9BF50C1C86AF4692DFBE8BA55",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E440D4777BD741E0961B8AE1F136AD28A138AD5C" : 0,
     "C76D3ED8AD3539087A5FBC85A853E63FBDBE34DB" : 0,
-    "E440D4777BD741E0961B8AE1F136AD28A138AD5C" : 0
+    "2AA760079D6F82F9BF50C1C86AF4692DFBE8BA55" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AD08B1AF-6908-45FE-B530-01CCC2A037B6",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E440D4777BD741E0961B8AE1F136AD28A138AD5C" : "..\/AUTAPIClient",
     "C76D3ED8AD3539087A5FBC85A853E63FBDBE34DB" : "..\/firmware-sdk",
-    "E440D4777BD741E0961B8AE1F136AD28A138AD5C" : "..\/AUTAPIClient"
+    "2AA760079D6F82F9BF50C1C86AF4692DFBE8BA55" : "Oregon\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Oregon",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Oregon.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mkim-hj\/oregon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2AA760079D6F82F9BF50C1C86AF4692DFBE8BA55"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Automatic\/firmware-sdk.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

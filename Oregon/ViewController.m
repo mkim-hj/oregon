@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "AutomaticAdapter/AutomaticAdapter.h"
+#import "ExternalAccessory/ExternalAccessory.h"
 @import AUTAPIClient;
 @import AFNetworking;
 
@@ -18,10 +20,59 @@
 
 @end
 
-
-
 @implementation ViewController
 
+ALELM327Session *currentSession = NULL;
+
+static NSArray* getAttachedDevices() {
+    EAAccessoryManager* accessoryManager = [EAAccessoryManager sharedAccessoryManager];
+    if (accessoryManager) {
+        return [accessoryManager connectedAccessories];
+        //NSLog(@"ConnectedAccessories = %@", connectedAccessories);
+    }
+    return NULL;
+}
+
+static void getELMSession() {
+    ALAutomaticAdapter * myAutomaticAdapter;
+    NSArray* connectedDevices = getAttachedDevices();
+    for (id device in connectedDevices) {
+        myAutomaticAdapter = [device asAutomaticAdapter];
+        if (myAutomaticAdapter) {
+            break;
+            // The EAAccessory is an Automatic Adapter.  Use this interface to
+            // gain access to its engine data as shown below...
+        }
+    }
+    
+    [myAutomaticAdapter
+     openAuthorizedSessionForAutomaticClient:@"1544288664bb7debe2de"
+     allowingUserInteraction:YES
+     onStatus:^(ALAuthStatus inAuthStatus, NSError *inError) {
+         
+         // Monitor authentication status and handle any errors here...
+         NSLog(@"onStatus");
+         
+     }
+     onAuthorized:^(ALELM327Session *inSession, NSString *inGreeting) {
+         
+         // This block is called if authentication succeeds.  The ALELM327Session can now
+         // be used to communicate with the adapter and access engine data.  For example:
+         NSLog(@"Succeeded");
+         currentSession = inSession;
+         //         [inSession sendLine:@"01 00" onResponse:^(NSString *inCommand, NSString *inResponse, NSError *inError) {
+         //             // Check inError and use inResponse here...
+         //         }];
+         
+         // Retain inSession to continue using it after this block returns.
+     }
+     onClosed:^(NSError *inError) {
+         NSLog(@"Session Ended");
+         // This block is called when the session ends (unless it was detached as
+         // shown below)
+         
+     }];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,11 +107,11 @@
          authenticateWithUsername:_usernameText.text
          password:_passwordText.text
          scopes:AUTClientAuthorizationScopesTrip | AUTClientAuthorizationScopesLocation]
-        deliverOnMainThread]
        flattenMap:^RACStream *(id value) {
            return [self.client authenticateLegacyWithUsername:_usernameText.text password:_passwordText.text];
        }]
       logAll]
+      deliverOnMainThread]
      subscribeError:^(NSError *error) {
          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Authentication Failed."
                                                          message:@"Please check your username and password and try again."
@@ -69,7 +120,11 @@
                                                otherButtonTitles:nil];
          [alert show];
      } completed:^{
-         NSLog(@"here!");
+//         [self performSegueWithIdentifier:@"loginSegue" sender:self];
+         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+         UIViewController *dashboardController = [mainStoryboard instantiateViewControllerWithIdentifier:@"DashboardViewController"]; 
+         [self presentViewController:dashboardController animated:YES completion:nil];
+         
      }];
 }
 
