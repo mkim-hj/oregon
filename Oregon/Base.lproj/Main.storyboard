@@ -1,10 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oAi-R9-D7j">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="locator-bold.ttf">
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+            <string>Locator-Bold</string>
+        </mutableArray>
+        <mutableArray key="locator-light.ttf">
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+            <string>Locator-Light</string>
+        </mutableArray>
+        <mutableArray key="locator-regular.ttf">
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+            <string>Locator-Regular</string>
+        </mutableArray>
+        <mutableArray key="panton-extrabold.ttf">
+            <string>Panton-ExtraBold</string>
+            <string>Panton-ExtraBold</string>
+            <string>Panton-ExtraBold</string>
+            <string>Panton-ExtraBold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LOH-Lg-Xac">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="oAi-R9-D7j" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7JS-1r-kWv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JVj-9T-FB1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="utr-W4-cNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440.5" y="515.5"/>
+        </scene>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,28 +92,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A simpler smog check solution, right from your phone." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPy-BH-XXn">
-                                <rect key="frame" x="0.0" y="193" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <rect key="frame" x="0.0" y="203" width="375" height="21"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="14"/>
                                 <color key="textColor" red="0.56470588239999997" green="0.60784313729999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Oregon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNd-XQ-vn6">
-                                <rect key="frame" x="29" y="151" width="316" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <rect key="frame" x="29" y="161" width="316" height="42"/>
+                                <fontDescription key="fontDescription" name="Panton-ExtraBold" family="Panton" pointSize="32"/>
                                 <color key="textColor" red="0.56470588235294117" green="0.60784313725490191" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Automatic_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7zr-Uy-1Zn">
-                                <rect key="frame" x="148" y="49" width="78" height="88"/>
+                                <rect key="frame" x="148" y="59" width="78" height="88"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gBs-hO-Xwm">
-                                <rect key="frame" x="26" y="284" width="323" height="100"/>
+                                <rect key="frame" x="26" y="314" width="323" height="100"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2k-NK-g1B">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="51"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -53,7 +127,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eJ-fl-C6v">
                                         <rect key="frame" x="0.0" y="50" width="323" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
@@ -62,17 +136,10 @@
                                     <constraint firstAttribute="height" constant="100" id="N7d-te-u0Q"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDj-ay-fuy">
-                                <rect key="frame" x="0.0" y="379" width="375" height="67"/>
-                                <string key="text">By logging in, you agree to share your
-smog test results with Oregon.</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <color key="textColor" red="0.56470588239999997" green="0.60784313729999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIm-J8-cP7">
-                                <rect key="frame" x="84" y="528" width="200" height="50"/>
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
                                 <color key="backgroundColor" red="0.30980392159999998" green="0.70588235290000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="20"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -80,17 +147,34 @@ smog test results with Oregon.</string>
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiw-ng-af8"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="FbJ-T4-d95">
+                                <rect key="frame" x="169" y="250" width="37" height="37"/>
+                                <color key="color" red="0.55294117649999996" green="0.59607843140000005" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDj-ay-fuy">
+                                <rect key="frame" x="0.0" y="419" width="375" height="67"/>
+                                <string key="text">By logging in, you agree to share your
+smog test results with Oregon.</string>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="14"/>
+                                <color key="textColor" red="0.56470588239999997" green="0.60784313729999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.97254901960784312" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="gBs-hO-Xwm" secondAttribute="trailing" constant="10" id="0ao-ts-tB2"/>
                             <constraint firstItem="gBs-hO-Xwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="9AC-kq-lNx"/>
+                            <constraint firstItem="gBs-hO-Xwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fbo-60-q8h"/>
                             <constraint firstItem="gBs-hO-Xwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="MuH-ka-O5H"/>
                             <constraint firstItem="gBs-hO-Xwm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NYS-gz-fJw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gBs-hO-Xwm" secondAttribute="trailing" id="Nkg-Ht-i5q"/>
+                            <constraint firstItem="gBs-hO-Xwm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="46" id="SiJ-fX-OyJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gBs-hO-Xwm" secondAttribute="trailing" constant="10" id="TAa-th-1gE"/>
+                            <constraint firstItem="FbJ-T4-d95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TIc-uB-iey"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gBs-hO-Xwm" secondAttribute="trailing" constant="10" id="ZOZ-Gd-cG0"/>
                             <constraint firstItem="gBs-hO-Xwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aW2-XT-6uG"/>
+                            <constraint firstItem="gBs-hO-Xwm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30.5" id="eXc-ut-IjX"/>
+                            <constraint firstItem="FbJ-T4-d95" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fDx-Wy-AhV"/>
                             <constraint firstItem="gBs-hO-Xwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="izw-w3-hub"/>
                             <constraint firstItem="gBs-hO-Xwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="jbw-Mc-nZH"/>
                             <constraint firstItem="gBs-hO-Xwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sAT-Bf-WyD"/>
@@ -100,28 +184,34 @@ smog test results with Oregon.</string>
                                 <exclude reference="0ao-ts-tB2"/>
                                 <exclude reference="9AC-kq-lNx"/>
                                 <exclude reference="MuH-ka-O5H"/>
+                                <exclude reference="NYS-gz-fJw"/>
                                 <exclude reference="Nkg-Ht-i5q"/>
+                                <exclude reference="SiJ-fX-OyJ"/>
                                 <exclude reference="TAa-th-1gE"/>
                                 <exclude reference="aW2-XT-6uG"/>
                                 <exclude reference="izw-w3-hub"/>
+                                <exclude reference="sAT-Bf-WyD"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="MD9-og-UmE"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="FbJ-T4-d95" id="tbX-3q-lLM"/>
                         <outlet property="passwordText" destination="4eJ-fl-C6v" id="MfS-Rz-OL1"/>
                         <outlet property="usernameText" destination="w2k-NK-g1B" id="pXM-Zu-hAM"/>
+                        <segue destination="ixB-UU-DRG" kind="show" identifier="toDashboard" id="Wpg-bI-UIr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120.5" y="515.5"/>
+            <point key="canvasLocation" x="80.5" y="515.5"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="owN-La-ZJS">
             <objects>
-                <viewController storyboardIdentifier="DashboardViewController" title="Dashboard" id="ixB-UU-DRG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardViewController" title="Dashboard" id="ixB-UU-DRG" customClass="DashboardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UJ7-fv-XuK"/>
                         <viewControllerLayoutGuide type="bottom" id="eer-PS-Csr"/>
@@ -131,28 +221,15 @@ smog test results with Oregon.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGB-JR-V6I">
-                                <rect key="frame" x="-10" y="392" width="390" height="275"/>
+                                <rect key="frame" x="-10" y="372" width="390" height="295"/>
                                 <connections>
                                     <segue destination="wy6-JH-WzX" kind="embed" id="9T2-vv-X8z"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMY-22-5hA">
-                                <rect key="frame" x="60" y="255" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.99215686274509807" green="0.7803921568627451" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="RUN SMOG TEST">
-                                    <color key="titleColor" red="0.97647058819999999" green="0.97254901959999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rcf-F7-RR7" kind="popoverPresentation" popoverAnchorView="JMY-22-5hA" id="Rbw-8W-8To">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgQ-fe-bjK">
                                 <rect key="frame" x="267" y="186" width="88" height="31"/>
                                 <color key="backgroundColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="12"/>
                                 <state key="normal" title="CHANGE">
                                     <color key="titleColor" red="0.97647058819999999" green="0.97254901959999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -164,26 +241,26 @@ smog test results with Oregon.</string>
                                         <rect key="frame" x="16" y="33" width="54" height="49"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Oregon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwX-xt-4vY">
-                                        <rect key="frame" x="72" y="47" width="151" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <rect key="frame" x="72" y="43" width="151" height="29"/>
+                                        <fontDescription key="fontDescription" name="Panton-ExtraBold" family="Panton" pointSize="20"/>
                                         <color key="textColor" red="0.97647058819999999" green="0.97254901959999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user@automatic.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSJ-7S-iBE">
                                         <rect key="frame" x="231" y="36" width="141" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="12"/>
                                         <color key="textColor" red="0.97647058819999999" green="0.97254901959999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30p-us-Ze5">
                                         <rect key="frame" x="317" y="54" width="55" height="25"/>
                                         <color key="backgroundColor" red="0.99215686274509807" green="0.84313725490196079" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="12"/>
                                         <state key="normal" title="Logout">
                                             <color key="titleColor" red="0.97647058819999999" green="0.97254901959999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" id="WK6-8q-7yI"/>
+                                            <action selector="logOutPressed:" destination="ixB-UU-DRG" eventType="touchUpInside" id="HAV-JZ-0MZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -192,29 +269,40 @@ smog test results with Oregon.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Smog Check History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rle-KI-f0X">
                                 <rect key="frame" x="0.0" y="333" width="375" height="60"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Panton-ExtraBold" family="Panton" pointSize="25"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DMV EXPIRATION DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZe-UA-QZK">
                                 <rect key="frame" x="16" y="179" width="180" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="14"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="September 16, 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBC-a1-oP0">
-                                <rect key="frame" x="16" y="196" width="180" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <rect key="frame" x="16" y="197" width="180" height="21"/>
+                                <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="14"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3R-Qw-aNQ">
                                 <rect key="frame" x="0.0" y="97" width="375" height="60"/>
                                 <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Panton-ExtraBold" family="Panton" pointSize="25"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMY-22-5hA">
+                                <rect key="frame" x="60" y="255" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.7803921568627451" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="20"/>
+                                <state key="normal" title="RUN SMOG TEST">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.97254901959999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rcf-F7-RR7" kind="show" id="ANA-tU-EUV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -230,6 +318,9 @@ smog test results with Oregon.</string>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="GSJ-7S-iBE" id="zCR-NT-Rae"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WS8-el-pTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,7 +331,7 @@ smog test results with Oregon.</string>
             <objects>
                 <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="wy6-JH-WzX" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="vWr-u4-47b">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="305"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="295"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -257,19 +348,19 @@ smog test results with Oregon.</string>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUCCESSFUL TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31I-l3-ULx">
                                                     <rect key="frame" x="25" y="18" width="177" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="18"/>
                                                     <color key="textColor" red="0.086194490131578941" green="0.84313725490000002" blue="0.42026362147105267" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Submitted test results to Oregon. Login to DEQ Tool to view results." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6K-vs-Bkp">
                                                     <rect key="frame" x="25" y="57" width="254" height="41"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="16"/>
                                                     <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="September 15, 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRh-YP-Ljo">
                                                     <rect key="frame" x="196" y="17" width="180" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="15"/>
                                                     <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -293,19 +384,19 @@ smog test results with Oregon.</string>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="August 10, 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ft-Gl-8j0">
                                                     <rect key="frame" x="196" y="17" width="180" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="15"/>
                                                     <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone was restarted before Test completed. No test results were submitted to Oregon." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X0-ZL-2kB">
                                                     <rect key="frame" x="25" y="57" width="358" height="41"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="16"/>
                                                     <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UNSUCCESSFUL TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOc-BL-7VR">
-                                                    <rect key="frame" x="25" y="17" width="196" height="22"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <rect key="frame" x="25" y="17" width="207" height="22"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="18"/>
                                                     <color key="textColor" red="0.87654194078947367" green="0.19595497532894737" blue="0.1211194490131579" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -315,30 +406,30 @@ smog test results with Oregon.</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="ROM-EE-bbe">
+                            <tableViewSection id="d1X-oc-tA6">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="27X-L8-Fep">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="gyY-qh-Div">
                                         <rect key="frame" x="0.0" y="236" width="390" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="27X-L8-Fep" id="XBq-hT-Mw4">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="gyY-qh-Div" id="pL4-Sj-yvU">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="July 2, 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8L-BS-604">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="July 5, 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mx9-17-HIP">
                                                     <rect key="frame" x="196" y="17" width="180" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="15"/>
                                                     <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone was restarted before Test completed. No test results were submitted to Oregon." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNi-hJ-Aba">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone was restarted before Test completed. No test results were submitted to Oregon." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="co1-5f-J7K">
                                                     <rect key="frame" x="25" y="57" width="358" height="41"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="16"/>
                                                     <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UNSUCCESSFUL TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOd-vN-gyv">
-                                                    <rect key="frame" x="25" y="17" width="196" height="22"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UNSUCCESSFUL TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlS-NF-ty7">
+                                                    <rect key="frame" x="25" y="17" width="207" height="22"/>
+                                                    <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="18"/>
                                                     <color key="textColor" red="0.87654194080000003" green="0.1959549753" blue="0.121119449" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -359,10 +450,10 @@ smog test results with Oregon.</string>
             </objects>
             <point key="canvasLocation" x="582" y="1252.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Smog Test View Controller-->
         <scene sceneID="TKN-TV-aoh">
             <objects>
-                <viewController id="rcf-F7-RR7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SmogTestViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rcf-F7-RR7" customClass="SmogTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Msj-9Y-1ez"/>
                         <viewControllerLayoutGuide type="bottom" id="RuS-eY-tFH"/>
@@ -372,49 +463,65 @@ smog test results with Oregon.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dz-M2-yTw">
-                                <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
+                                <rect key="frame" x="0.0" y="602" width="188" height="70"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
                                 <state key="normal" title="Exit">
                                     <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ixB-UU-DRG" kind="presentation" id="lvU-ES-Dbt"/>
+                                    <action selector="exitPressed:" destination="rcf-F7-RR7" eventType="touchUpInside" id="yed-xy-zsc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9W-tp-y0h">
-                                <rect key="frame" x="187" y="607" width="187.5" height="60"/>
+                                <rect key="frame" x="187" y="602" width="188" height="70"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Next">
+                                <state key="normal">
                                     <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startTest:" destination="rcf-F7-RR7" eventType="touchUpInside" id="wM3-pN-g1W"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start the Car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWJ-JU-gXh">
                                 <rect key="frame" x="0.0" y="64" width="375" height="53"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="26"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 1 of 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR8-FF-2n9">
                                 <rect key="frame" x="146" y="107" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="15"/>
                                 <color key="textColor" red="0.55294117649999996" green="0.59607843140000005" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="turncaron.png" translatesAutoresizingMaskIntoConstraints="NO" id="WKQ-jO-NT7">
+                                <rect key="frame" x="57" y="193" width="260" height="282"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="BmW-NV-C9j">
+                                <rect key="frame" x="263" y="618" width="37" height="37"/>
+                                <color key="color" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="BmW-NV-C9j" id="mBp-51-9Fn"/>
+                        <outlet property="nextButton" destination="B9W-tp-y0h" id="jOt-eY-2MZ"/>
+                        <segue destination="xKn-J9-h7k" kind="show" identifier="toRunTest" id="c16-Ea-LVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INg-eE-V0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1032.5" y="515.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Smog Test View Controller-->
         <scene sceneID="hT4-s1-Ko8">
             <objects>
-                <viewController id="xKn-J9-h7k" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SmogRunningViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xKn-J9-h7k" customClass="SmogTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ksB-JE-WGu"/>
                         <viewControllerLayoutGuide type="bottom" id="QBk-z3-tTP"/>
@@ -423,50 +530,81 @@ smog test results with Oregon.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6T-nT-rk4">
-                                <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP3-W5-tHr">
+                                <rect key="frame" x="187" y="602" width="188" height="70"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Exit">
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <state key="normal" title="Testing...">
                                     <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ixB-UU-DRG" kind="presentation" id="AG1-bp-Sz8"/>
+                                    <action selector="testCompleted:" destination="xKn-J9-h7k" eventType="touchUpInside" id="O8O-eK-a7T"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP3-W5-tHr">
-                                <rect key="frame" x="187" y="607" width="187.5" height="60"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 2 of 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGo-qN-mrR">
                                 <rect key="frame" x="146" y="107" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="15"/>
                                 <color key="textColor" red="0.55294117649999996" green="0.59607843140000005" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Running the Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqm-zg-Xwz">
                                 <rect key="frame" x="0.0" y="64" width="375" height="53"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="26"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-0J-j89">
+                                <rect key="frame" x="0.0" y="400" width="375" height="159"/>
+                                <string key="text">This test may take 5 minutes to complete. Please keep your phone close to the Link during this time.  If you kill the app, you will  have to restart the test.</string>
+                                <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHECKING YOUR SMOG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdi-gR-Sm8">
+                                <rect key="frame" x="0.0" y="333" width="375" height="53"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Vab-oF-1u6">
+                                <rect key="frame" x="169" y="219" width="37" height="37"/>
+                                <color key="color" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6T-nT-rk4">
+                                <rect key="frame" x="0.0" y="602" width="188" height="70"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitPressed:" destination="xKn-J9-h7k" eventType="touchUpInside" id="LMK-0k-lQj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="IkB-Z5-le7">
+                                <rect key="frame" x="67" y="174" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="completedIcon" destination="IkB-Z5-le7" id="Tgd-X1-WXN"/>
+                        <outlet property="testRunningIndicator" destination="Vab-oF-1u6" id="pMf-fL-ZwD"/>
+                        <outlet property="testingButton" destination="jP3-W5-tHr" id="kl9-BS-RS6"/>
+                        <segue destination="od8-Bm-BfO" kind="show" identifier="toSuccess" id="hKv-w2-2eb"/>
+                        <segue destination="10t-N8-6ez" kind="show" identifier="toFailed" id="hzt-7r-Xng"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPK-dX-MhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1476.5" y="515.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Smog Test View Controller-->
         <scene sceneID="BOm-pr-hzd">
             <objects>
-                <viewController id="10t-N8-6ez" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FailureViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="10t-N8-6ez" customClass="SmogTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gc7-qQ-vpJ"/>
                         <viewControllerLayoutGuide type="bottom" id="H0A-oE-4b1"/>
@@ -476,49 +614,60 @@ smog test results with Oregon.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMK-Kd-Qg3">
-                                <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
+                                <rect key="frame" x="0.0" y="602" width="375" height="70"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Exit">
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <state key="normal" title="Back to Smog Dashboard">
                                     <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ixB-UU-DRG" kind="presentation" id="92k-l7-CAd"/>
+                                    <action selector="exitPressed:" destination="10t-N8-6ez" eventType="touchUpInside" id="F4O-5d-4Ci"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOX-U6-YyS">
-                                <rect key="frame" x="187" y="607" width="187.5" height="60"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Unsuccessful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjT-8j-Xtz">
                                 <rect key="frame" x="0.0" y="64" width="375" height="53"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="24"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 3 of 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvy-fo-Irz">
                                 <rect key="frame" x="146" y="107" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="15"/>
                                 <color key="textColor" red="0.55294117649999996" green="0.59607843140000005" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unfortunately, your test was unsuccessful." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P74-AB-Mho">
+                                <rect key="frame" x="0.0" y="173" width="375" height="50"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Possible reasons include:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piu-KV-jiO">
+                                <rect key="frame" x="0.0" y="249" width="375" height="50"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to restart the test:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOT-qb-32j">
+                                <rect key="frame" x="0.0" y="390" width="375" height="50"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owJ-lH-O3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1910.5" y="869.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Smog Test View Controller-->
         <scene sceneID="lGF-9l-9oL">
             <objects>
-                <viewController id="od8-Bm-BfO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SuccessViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="od8-Bm-BfO" customClass="SmogTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fty-7x-Uj8"/>
                         <viewControllerLayoutGuide type="bottom" id="SAg-mm-apr"/>
@@ -527,40 +676,64 @@ smog test results with Oregon.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-dl-cyt">
-                                <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Exit">
-                                    <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ixB-UU-DRG" kind="presentation" id="LSd-EZ-9bm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ur1-UJ-MeL">
-                                <rect key="frame" x="187" y="607" width="187.5" height="60"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slF-Cd-DwA">
                                 <rect key="frame" x="0.0" y="64" width="375" height="53"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Locator-Bold" family="Locator" pointSize="24"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 3 of 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrf-Tw-0kA">
                                 <rect key="frame" x="146" y="107" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="15"/>
                                 <color key="textColor" red="0.55294117649999996" green="0.59607843140000005" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not your VIN?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZI-Yx-eki">
+                                <rect key="frame" x="140" y="267" width="94" height="21"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="15"/>
+                                <color key="textColor" red="0.30980392156862746" green="0.70588235294117641" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your results are being sent to the state of Oregon for this VIN:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTs-HB-tzF">
+                                <rect key="frame" x="0.0" y="185" width="375" height="50"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please log into Oregon DEQ to check your results. Processing should take X days." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46W-ys-1Pp">
+                                <rect key="frame" x="0.0" y="301" width="375" height="89"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1FAFP34384W187315" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSo-ii-fZR">
+                                <rect key="frame" x="0.0" y="224" width="375" height="49"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdL-IF-YDr">
+                                <rect key="frame" x="24" y="403" width="326" height="80"/>
+                                <string key="text">We can't tell whether or not you passed or failed right away because Oregon  needs to review your results according to their standards.</string>
+                                <fontDescription key="fontDescription" name="Locator-Light" family="Locator" pointSize="16"/>
+                                <color key="textColor" red="0.55294117649999996" green="0.59607843140000005" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-dl-cyt">
+                                <rect key="frame" x="0.0" y="602" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Locator-Regular" family="Locator" pointSize="20"/>
+                                <state key="normal" title="Back to Smog Dashboard">
+                                    <color key="titleColor" red="0.46666666670000001" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitPressed:" destination="od8-Bm-BfO" eventType="touchUpInside" id="VvO-ci-jtT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tac-YF-kDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -571,8 +744,7 @@ smog test results with Oregon.</string>
     <resources>
         <image name="AutomaticLogo-large.png" width="75" height="84"/>
         <image name="Automatic_Logo.png" width="373" height="416"/>
+        <image name="check_icon.png" width="200" height="200"/>
+        <image name="turncaron.png" width="251" height="273"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="lvU-ES-Dbt"/>
-    </inferredMetricsTieBreakers>
 </document>

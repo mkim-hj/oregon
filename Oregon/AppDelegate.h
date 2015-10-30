@@ -16,10 +16,13 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (weak,   nonatomic) UIViewController *dashboardController;
+//@property (weak,   nonatomic) UIViewController *loginController;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
-
+- (void) goToDashboard;
+- (void) goToLogin;
 
 @end
 

@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
-    
-}
-
-//-(IBAction)renderDashboard:(id)sender;
-
+@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *passwordText;
+@property (weak, nonatomic) IBOutlet UITextField *usernameText;
 @end
 

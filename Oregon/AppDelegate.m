@@ -9,6 +9,7 @@
 
 
 #import "AppDelegate.h"
+#import "AutomaticAdapter/AutomaticAdapter.h"
 
 @import AFNetworking;
 @import AUTAPIClient;
@@ -20,6 +21,14 @@
 
 @implementation AppDelegate
 
+- (void) goToDashboard {
+    [[_dashboardController navigationController] popToViewController:_dashboardController animated:YES];
+}
+
+- (void) goToLogin {
+//    [[_loginController navigationController] popToViewController:_loginController animated:YES];
+    [[_dashboardController navigationController] popToRootViewControllerAnimated:YES];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -128,6 +137,35 @@
             abort();
         }
     }
+}
+
+- (BOOL)
+application:(UIApplication *)inApplication
+openURL:(NSURL *)inUrl
+sourceApplication:(NSString *)inSourceApplication
+annotation:(id)inAnnotation
+{
+    BOOL    isAdapterAuthorizationURL = [ALAutomaticAdapter
+                                         authorizeAdapterForURL:inUrl
+                                         withSecret:@"9a1da50fa231b8fb077ba575dee0f1b6ac50ec20"
+                                         onStatus:^(ALAuthStatus inAuthStatus, NSError *inError) {
+                                             
+                                             // Monitor authorization status and handle any errors here...
+                                             NSLog(@"APP DELEGATE: On Status");
+                                             
+                                         }
+                                         onAuthorized:^(ALAutomaticAdapter *inAdapter, NSString *inClientID, ALAutomaticAdapterOnAuthorizationStatus inStatusCallback) {
+                                             
+                                             // This block is called if authorization succeeds.  The app now has
+                                             // keychain credentials to access engine data on the adapter.  Pass
+                                             // inAdapter to whatever code handles a discovered Automatic Adapter.
+                                             // Retain inAdapter to continue using it after this block returns.
+                                             
+                                             NSLog(@"APP DELEGATE: On Authorized");
+                                             
+                                         }];
+    
+    return isAdapterAuthorizationURL;
 }
 
 @end

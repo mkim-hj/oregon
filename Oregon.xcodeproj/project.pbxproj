@@ -10,6 +10,9 @@
 		6E288BFE1BDED86400C6FC6F /* Automatic_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */; };
 		6E288C001BE0018700C6FC6F /* AutomaticLogo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E288BFF1BE0018700C6FC6F /* AutomaticLogo-large.png */; };
 		6E288C021BE001F000C6FC6F /* AutomaticLogo-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E288C011BE001F000C6FC6F /* AutomaticLogo-medium.png */; };
+		6E288C0D1BE0517600C6FC6F /* turncaron.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E288C0C1BE0517600C6FC6F /* turncaron.png */; };
+		6E288C141BE055AA00C6FC6F /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E288C131BE055AA00C6FC6F /* DashboardViewController.m */; };
+		6E288C181BE180F700C6FC6F /* SmogTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E288C171BE180F700C6FC6F /* SmogTestViewController.m */; };
 		6E2DAE5F1BDAF5E3000A7839 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */; };
 		6E2DAE601BDAF5E3000A7839 /* AUTAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE571BDAF5E3000A7839 /* AUTAPIClient.framework */; };
 		6E2DAE621BDAF5E3000A7839 /* AUTLogKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE591BDAF5E3000A7839 /* AUTLogKit.framework */; };
@@ -19,6 +22,13 @@
 		6E2DAE661BDAF5E3000A7839 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE5D1BDAF5E3000A7839 /* ReactiveCocoa.framework */; };
 		6E2DAE671BDAF5E3000A7839 /* Valet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE5E1BDAF5E3000A7839 /* Valet.framework */; };
 		6E2DAE6B1BDEBD04000A7839 /* AUTBinaryTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2DAE6A1BDEBD04000A7839 /* AUTBinaryTools.framework */; };
+		6E50BC9A1BE3368C00BE9961 /* locator-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E50BC931BE2DB4800BE9961 /* locator-bold.ttf */; };
+		6E50BC9B1BE3368C00BE9961 /* locator-displayblack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E50BC941BE2DB4800BE9961 /* locator-displayblack.ttf */; };
+		6E50BC9C1BE3368C00BE9961 /* locator-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E50BC951BE2DB4800BE9961 /* locator-light.ttf */; };
+		6E50BC9D1BE3368C00BE9961 /* locator-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E50BC961BE2DB4800BE9961 /* locator-regular.ttf */; };
+		6E50BC9E1BE3368C00BE9961 /* locator-ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E50BC971BE2DB4800BE9961 /* locator-ultralight.ttf */; };
+		6E50BC9F1BE3368C00BE9961 /* panton-extrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E50BC991BE2DCB400BE9961 /* panton-extrabold.ttf */; };
+		6E50BCA11BE33B6F00BE9961 /* check_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E50BCA01BE33B6F00BE9961 /* check_icon.png */; };
 		6E814CA61BDEBFA400E12B42 /* AutomaticAdapter.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6ED464341BD99A690075B042 /* AutomaticAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E814CA71BDEBFA400E12B42 /* AUTBinaryTools.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE6A1BDEBD04000A7839 /* AUTBinaryTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E814CA81BDEBFA400E12B42 /* AFNetworking.framework in Embed Frameworks (10 items) */ = {isa = PBXBuildFile; fileRef = 6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -93,6 +103,11 @@
 		6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Automatic_Logo.png; sourceTree = "<group>"; };
 		6E288BFF1BE0018700C6FC6F /* AutomaticLogo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AutomaticLogo-large.png"; sourceTree = "<group>"; };
 		6E288C011BE001F000C6FC6F /* AutomaticLogo-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AutomaticLogo-medium.png"; sourceTree = "<group>"; };
+		6E288C0C1BE0517600C6FC6F /* turncaron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turncaron.png; sourceTree = "<group>"; };
+		6E288C121BE055AA00C6FC6F /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		6E288C131BE055AA00C6FC6F /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		6E288C161BE180F700C6FC6F /* SmogTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmogTestViewController.h; sourceTree = "<group>"; };
+		6E288C171BE180F700C6FC6F /* SmogTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmogTestViewController.m; sourceTree = "<group>"; };
 		6E2DAE561BDAF5E3000A7839 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		6E2DAE571BDAF5E3000A7839 /* AUTAPIClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTAPIClient.framework; path = Carthage/Build/iOS/AUTAPIClient.framework; sourceTree = "<group>"; };
 		6E2DAE591BDAF5E3000A7839 /* AUTLogKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTLogKit.framework; path = Carthage/Build/iOS/AUTLogKit.framework; sourceTree = "<group>"; };
@@ -102,6 +117,13 @@
 		6E2DAE5D1BDAF5E3000A7839 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		6E2DAE5E1BDAF5E3000A7839 /* Valet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Valet.framework; path = Carthage/Build/iOS/Valet.framework; sourceTree = "<group>"; };
 		6E2DAE6A1BDEBD04000A7839 /* AUTBinaryTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTBinaryTools.framework; path = Carthage/Build/iOS/AUTBinaryTools.framework; sourceTree = "<group>"; };
+		6E50BC931BE2DB4800BE9961 /* locator-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "locator-bold.ttf"; sourceTree = "<group>"; };
+		6E50BC941BE2DB4800BE9961 /* locator-displayblack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "locator-displayblack.ttf"; sourceTree = "<group>"; };
+		6E50BC951BE2DB4800BE9961 /* locator-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "locator-light.ttf"; sourceTree = "<group>"; };
+		6E50BC961BE2DB4800BE9961 /* locator-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "locator-regular.ttf"; sourceTree = "<group>"; };
+		6E50BC971BE2DB4800BE9961 /* locator-ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "locator-ultralight.ttf"; sourceTree = "<group>"; };
+		6E50BC991BE2DCB400BE9961 /* panton-extrabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "panton-extrabold.ttf"; sourceTree = "<group>"; };
+		6E50BCA01BE33B6F00BE9961 /* check_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_icon.png; sourceTree = "<group>"; };
 		6ED4640F1BD99A5D0075B042 /* Oregon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oregon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED464131BD99A5D0075B042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6ED464151BD99A5D0075B042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -188,6 +210,18 @@
 				6E288BFD1BDED86400C6FC6F /* Automatic_Logo.png */,
 				6E288C011BE001F000C6FC6F /* AutomaticLogo-medium.png */,
 				6E288BFF1BE0018700C6FC6F /* AutomaticLogo-large.png */,
+				6E50BCA01BE33B6F00BE9961 /* check_icon.png */,
+				6E288C0C1BE0517600C6FC6F /* turncaron.png */,
+				6E288C121BE055AA00C6FC6F /* DashboardViewController.h */,
+				6E288C131BE055AA00C6FC6F /* DashboardViewController.m */,
+				6E288C161BE180F700C6FC6F /* SmogTestViewController.h */,
+				6E288C171BE180F700C6FC6F /* SmogTestViewController.m */,
+				6E50BC931BE2DB4800BE9961 /* locator-bold.ttf */,
+				6E50BC941BE2DB4800BE9961 /* locator-displayblack.ttf */,
+				6E50BC951BE2DB4800BE9961 /* locator-light.ttf */,
+				6E50BC961BE2DB4800BE9961 /* locator-regular.ttf */,
+				6E50BC971BE2DB4800BE9961 /* locator-ultralight.ttf */,
+				6E50BC991BE2DCB400BE9961 /* panton-extrabold.ttf */,
 				6ED464181BD99A5D0075B042 /* ViewController.h */,
 				6ED464191BD99A5D0075B042 /* ViewController.m */,
 				6ED4641B1BD99A5D0075B042 /* Main.storyboard */,
@@ -253,6 +287,7 @@
 				TargetAttributes = {
 					6ED4640E1BD99A5D0075B042 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = S69EHXYN33;
 					};
 				};
 			};
@@ -302,8 +337,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E50BC9A1BE3368C00BE9961 /* locator-bold.ttf in Resources */,
+				6E50BC9B1BE3368C00BE9961 /* locator-displayblack.ttf in Resources */,
+				6E50BC9C1BE3368C00BE9961 /* locator-light.ttf in Resources */,
+				6E50BC9D1BE3368C00BE9961 /* locator-regular.ttf in Resources */,
+				6E50BC9E1BE3368C00BE9961 /* locator-ultralight.ttf in Resources */,
+				6E50BC9F1BE3368C00BE9961 /* panton-extrabold.ttf in Resources */,
 				6E288BFE1BDED86400C6FC6F /* Automatic_Logo.png in Resources */,
+				6E288C0D1BE0517600C6FC6F /* turncaron.png in Resources */,
 				6ED464251BD99A5D0075B042 /* LaunchScreen.storyboard in Resources */,
+				6E50BCA11BE33B6F00BE9961 /* check_icon.png in Resources */,
 				6E288C001BE0018700C6FC6F /* AutomaticLogo-large.png in Resources */,
 				6ED464221BD99A5D0075B042 /* Assets.xcassets in Resources */,
 				6ED4641D1BD99A5D0075B042 /* Main.storyboard in Resources */,
@@ -318,9 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E288C141BE055AA00C6FC6F /* DashboardViewController.m in Sources */,
 				6EFED6481BDEC98300DD5E49 /* ViewController.m in Sources */,
 				6ED464201BD99A5D0075B042 /* Oregon.xcdatamodeld in Sources */,
 				6ED464171BD99A5D0075B042 /* AppDelegate.m in Sources */,
+				6E288C181BE180F700C6FC6F /* SmogTestViewController.m in Sources */,
 				6ED464141BD99A5D0075B042 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +485,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -453,6 +501,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Automatic.Oregon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -461,6 +510,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -474,6 +526,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Automatic.Oregon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

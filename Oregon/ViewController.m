@@ -7,75 +7,34 @@
 //
 
 #import "ViewController.h"
-#import "AutomaticAdapter/AutomaticAdapter.h"
 #import "ExternalAccessory/ExternalAccessory.h"
+#import "DashboardViewController.h"
+#import "AppDelegate.h"
+
 @import AUTAPIClient;
 @import AFNetworking;
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *passwordText;
-@property (weak, nonatomic) IBOutlet UITextField *usernameText;
+//@property (weak, nonatomic) IBOutlet UITextField *passwordText;
+//@property (weak, nonatomic) IBOutlet UITextField *usernameText;
+
 @property (readwrite, nonatomic, strong) AUTClient *client;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
 @end
 
 @implementation ViewController
 
-ALELM327Session *currentSession = NULL;
-
-static NSArray* getAttachedDevices() {
-    EAAccessoryManager* accessoryManager = [EAAccessoryManager sharedAccessoryManager];
-    if (accessoryManager) {
-        return [accessoryManager connectedAccessories];
-        //NSLog(@"ConnectedAccessories = %@", connectedAccessories);
-    }
-    return NULL;
-}
-
-static void getELMSession() {
-    ALAutomaticAdapter * myAutomaticAdapter;
-    NSArray* connectedDevices = getAttachedDevices();
-    for (id device in connectedDevices) {
-        myAutomaticAdapter = [device asAutomaticAdapter];
-        if (myAutomaticAdapter) {
-            break;
-            // The EAAccessory is an Automatic Adapter.  Use this interface to
-            // gain access to its engine data as shown below...
-        }
-    }
-    
-    [myAutomaticAdapter
-     openAuthorizedSessionForAutomaticClient:@"1544288664bb7debe2de"
-     allowingUserInteraction:YES
-     onStatus:^(ALAuthStatus inAuthStatus, NSError *inError) {
-         
-         // Monitor authentication status and handle any errors here...
-         NSLog(@"onStatus");
-         
-     }
-     onAuthorized:^(ALELM327Session *inSession, NSString *inGreeting) {
-         
-         // This block is called if authentication succeeds.  The ALELM327Session can now
-         // be used to communicate with the adapter and access engine data.  For example:
-         NSLog(@"Succeeded");
-         currentSession = inSession;
-         //         [inSession sendLine:@"01 00" onResponse:^(NSString *inCommand, NSString *inResponse, NSError *inError) {
-         //             // Check inError and use inResponse here...
-         //         }];
-         
-         // Retain inSession to continue using it after this block returns.
-     }
-     onClosed:^(NSError *inError) {
-         NSLog(@"Session Ended");
-         // This block is called when the session ends (unless it was detached as
-         // shown below)
-         
-     }];
+-(void)dismissKeyboard {
+    [_passwordText resignFirstResponder];
+    [_usernameText resignFirstResponder];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.activityIndicatorView stopAnimating];
+
     // Do any additional setup after loading the view, typically from a nib.
     UIView *passwordPadding = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
     UIView *usernamePadding = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
@@ -93,7 +52,14 @@ static void getELMSession() {
     _usernameText.leftView = usernamePadding;
     _usernameText.leftViewMode = UITextFieldViewModeAlways;
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
     self.client = [[AUTClient alloc] initWithClientID:@"1544288664bb7debe2de" clientSecret:@"9a1da50fa231b8fb077ba575dee0f1b6ac50ec20"];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -103,6 +69,8 @@ static void getELMSession() {
 
 - (IBAction)loginButtonPressed:(id)sender {
     // Login
+    [self.activityIndicatorView startAnimating];
+    
     [[[[[self.client
          authenticateWithUsername:_usernameText.text
          password:_passwordText.text
@@ -119,13 +87,20 @@ static void getELMSession() {
                                                cancelButtonTitle:@"OK"
                                                otherButtonTitles:nil];
          [alert show];
+         [self.activityIndicatorView stopAnimating];
      } completed:^{
-//         [self performSegueWithIdentifier:@"loginSegue" sender:self];
-         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-         UIViewController *dashboardController = [mainStoryboard instantiateViewControllerWithIdentifier:@"DashboardViewController"]; 
-         [self presentViewController:dashboardController animated:YES completion:nil];
-         
+         [self.activityIndicatorView stopAnimating];
+         [self performSegueWithIdentifier:@"toDashboard" sender:self];
+
      }];
+}
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    AppDelegate * delegate = [[UIApplication sharedApplication] delegate];
+    delegate.dashboardController = [segue destinationViewController];
+    ((DashboardViewController *) [segue destinationViewController]).passedUsername = _usernameText.text;
 }
 
 @end
